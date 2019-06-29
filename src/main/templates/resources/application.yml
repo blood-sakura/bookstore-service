@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ${artifactName}
+  profiles:
+    active:
+      - ${activeProfile}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"

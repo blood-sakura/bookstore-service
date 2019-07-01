@@ -23,7 +23,7 @@ public class BookstoreApplication {
   
   @RequestMapping(value = "/recommendedCS")
   public String readingComputerScienceList(){
-    return "Netty in Action";
+    return "Hibernate in Action";
   }
   
   public static void main(String[] args) {

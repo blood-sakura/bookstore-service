@@ -20,6 +20,12 @@ public class BookstoreApplication {
   public String readingNewList(){
     return "Netty in Action";
   }
+  
+  @RequestMapping(value = "/recommendedCS")
+  public String readingComputerScienceList(){
+    return "Netty in Action";
+  }
+  
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);
   }

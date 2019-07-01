@@ -15,7 +15,11 @@ public class BookstoreApplication {
   public String readingList(){
     return "Spring in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)";
   }
-
+  
+  @RequestMapping(value = "/recommendedNew")
+  public String readingNewList(){
+    return "Netty in Action";
+  }
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);
   }

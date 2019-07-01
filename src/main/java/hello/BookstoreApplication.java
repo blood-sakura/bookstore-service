@@ -40,9 +40,9 @@ public class BookstoreApplication {
     return "Books for Houses";
   }
   
-  @RequestMapping(value = "/recommendedLadyBooks")
-  public String readingLadyBooks(){
-    return "Books for wormen";
+  @RequestMapping(value = "/recommendedTouristsBooks")
+  public String readingTouristsBooks(){
+    return "Books for Tourists";
   }
 
   public static void main(String[] args) {

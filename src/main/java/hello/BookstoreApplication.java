@@ -45,6 +45,16 @@ public class BookstoreApplication {
     return "Books for Tourists";
   }
 
+  @RequestMapping(value = "/recommendedEnglishBooks")
+  public String readingEnglishBooks(){
+    return "Books for English";
+  }
+  
+  @RequestMapping(value = "/recommendedChineseBooks")
+  public String readingChineseBooks(){
+    return "Books for Chinese";
+  }
+  
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);
   }

@@ -23,7 +23,17 @@ public class BookstoreApplication {
   
   @RequestMapping(value = "/recommendedCS")
   public String readingComputerScienceList(){
-    return "Netty in Action";
+    return "Hibernate in Action";
+  }
+  
+  @RequestMapping(value = "/recommendedKidsBooks")
+  public String readingKidsBooks(){
+    return "MyBatis in Action";
+  }
+  
+  @RequestMapping(value = "/recommendedLadyBooks")
+  public String readingLadyBooks(){
+    return "Struts in Action";
   }
   
   public static void main(String[] args) {

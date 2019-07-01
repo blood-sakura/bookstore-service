@@ -26,13 +26,13 @@ public class BookstoreApplication {
     return "Hibernate in Action";
   }
   
-  @RequestMapping(value = "/recommendedShopping")
-  public String readingShoppingList(){
+  @RequestMapping(value = "/recommendedKidsBooks")
+  public String readingKidsBooks(){
     return "MyBatis in Action";
   }
   
-  @RequestMapping(value = "/recommendedCar")
-  public String readingCarList(){
+  @RequestMapping(value = "/recommendedLadyBooks")
+  public String readingLadyBooks(){
     return "Struts in Action";
   }
   

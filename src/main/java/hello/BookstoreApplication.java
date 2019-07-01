@@ -23,9 +23,13 @@ public class BookstoreApplication {
   
   @RequestMapping(value = "/recommendedCS")
   public String readingComputerScienceList(){
-    return "Netty in Action";
+    return "Hibernate in Action";
   }
   
+  @RequestMapping(value = "/recommendedShopping")
+  public String readingComputerScienceList(){
+    return "MyBatis in Action";
+  }
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);
   }

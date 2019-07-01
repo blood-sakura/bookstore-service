@@ -27,7 +27,7 @@ public class BookstoreApplication {
   }
   
   @RequestMapping(value = "/recommendedShopping")
-  public String readingComputerScienceList(){
+  public String readingShoppingList(){
     return "MyBatis in Action";
   }
   public static void main(String[] args) {

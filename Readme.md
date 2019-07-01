@@ -1,2 +1,1 @@
-It's a readme file for develop branch
-For 1.1.0-SNAPSHOT in develop #2
+It's a readme file for release 1.1.0

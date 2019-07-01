@@ -16,24 +16,19 @@ public class BookstoreApplication {
     return "Spring in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)";
   }
   
-  @RequestMapping(value = "/recommendedNew")
-  public String readingNewList(){
-    return "Netty in Action";
-  }
-  
-  @RequestMapping(value = "/recommendedCS")
-  public String readingComputerScienceList(){
-    return "Hibernate in Action";
+  @RequestMapping(value = "/recommendedGentlemanBooks")
+  public String readingGentlemanBooks(){
+    return "Books for men";
   }
   
   @RequestMapping(value = "/recommendedKidsBooks")
-  public String readingKidsBooks(){
-    return "MyBatis in Action";
+  public String readingKidBooks(){
+    return "Books for Kids";
   }
   
   @RequestMapping(value = "/recommendedLadyBooks")
   public String readingLadyBooks(){
-    return "Struts in Action";
+    return "Books for wormen";
   }
   
   public static void main(String[] args) {

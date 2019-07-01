@@ -30,7 +30,21 @@ public class BookstoreApplication {
   public String readingLadyBooks(){
     return "Books for wormen";
   }
+    @RequestMapping(value = "/recommendedPetBooks")
+  public String readingPetBooks(){
+    return "Books for pets";
+  }
   
+  @RequestMapping(value = "/recommendedHouseBooks")
+  public String readingHouseBooks(){
+    return "Books for Houses";
+  }
+  
+  @RequestMapping(value = "/recommendedLadyBooks")
+  public String readingLadyBooks(){
+    return "Books for wormen";
+  }
+
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);
   }

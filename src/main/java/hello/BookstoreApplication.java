@@ -16,24 +16,48 @@ public class BookstoreApplication {
     return "Spring in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)";
   }
   
-  @RequestMapping(value = "/recommendedNew")
-  public String readingNewList(){
-    return "Netty in Action";
-  }
-  
-  @RequestMapping(value = "/recommendedCS")
-  public String readingComputerScienceList(){
-    return "Hibernate in Action";
+  @RequestMapping(value = "/recommendedGentlemanBooks")
+  public String readingGentlemanBooks(){
+    return "Books for men";
   }
   
   @RequestMapping(value = "/recommendedKidsBooks")
-  public String readingKidsBooks(){
-    return "MyBatis in Action";
+  public String readingKidBooks(){
+    return "Books for Kids";
   }
   
   @RequestMapping(value = "/recommendedLadyBooks")
   public String readingLadyBooks(){
-    return "Struts in Action";
+    return "Books for wormen";
+  }
+    @RequestMapping(value = "/recommendedPetBooks")
+  public String readingPetBooks(){
+    return "Books for pets";
+  }
+  
+  @RequestMapping(value = "/recommendedHouseBooks")
+  public String readingHouseBooks(){
+    return "Books for Houses";
+  }
+  
+  @RequestMapping(value = "/recommendedTouristsBooks")
+  public String readingTouristsBooks(){
+    return "Books for Tourists";
+  }
+
+  @RequestMapping(value = "/recommendedEnglishBooks")
+  public String readingEnglishBooks(){
+    return "Books for English";
+  }
+  
+  @RequestMapping(value = "/recommendedChineseBooks")
+  public String readingChineseBooks(){
+    return "Books for Chinese";
+  }
+  
+  @RequestMapping(value = "/recommendedJapaneseBooks")
+  public String readingJapaneseBooks(){
+    return "Books for Japanese";
   }
   
   public static void main(String[] args) {

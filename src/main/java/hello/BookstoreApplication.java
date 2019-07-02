@@ -16,6 +16,11 @@ public class BookstoreApplication {
   public String readingList(){
     return "Spring in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)";
   }
+
+  @RequestMapping(value = "/recommended2")
+  public String readingList2(){
+    return "Spring 2 in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)";
+  }
   
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);

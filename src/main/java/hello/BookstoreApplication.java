@@ -60,6 +60,14 @@ public class BookstoreApplication {
     return "Books for Japanese";
   }
   
+  @RequestMapping(value = "/recommendedMathBooks")
+  public String readingMathBooks(){
+    return "Books for Math";
+  }
+  @RequestMapping(value = "/recommendedLabsBooks")
+  public String readingLabsBooks(){
+    return "Books for Labs";
+  }
   public static void main(String[] args) {
     SpringApplication.run(BookstoreApplication.class, args);
   }
